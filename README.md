@@ -1,11 +1,8 @@
-dumpsterdiving script for QBcore
+Dumpster Diving script for QBCore.
 
-Creator: Doxy#3435
-
-Do not sell anywhere, free out for use
-
-Working Dumpsterdiving script for QBcore. Script uses qb-target.. Will not work without qb-target qb-target can be found in the next link!
-https://github.com/BerkieBb/qb-target
+Dependecies: 
+qb-core
+qb-target
 
 Paste this in qb-target Config.lua
 
@@ -13,26 +10,25 @@ Paste this in qb-target Config.lua
 Config.TargetModels = {
 ["trashsearch"] = {
         models = {
-			-1096777189,--normal small
-			666561306,--big
-			1437508529,--small circle
-			-1426008804,--small open circle
-			-228596739,--open small circle
-			161465839,--werid blue small circle
-			651101403,--open medium circle
+	-1096777189,
+	666561306,
+	1437508529,
+	-1426008804,
+	-228596739,
+	161465839,
+	651101403,
+        -58485588,
+        218085040,
+        -206690185,
 
         },
         options = {
             {
                 type = "client",
                 event = "qb-trashsearch:client:searchtrash",
-                icon = "fas fa-pencil-ruler",
-                label = "Search Trash",
+                icon = "fas fa-dumpster",
+                label = "Dumpster Dive",
             },
         },
-        distance = 2.1
+        distance = 3.0
     },
-    
-    Thank you for using my scripts!
-    
-    You can mess wiht the timer settings untll you can search dumpster again.. server.lua
